@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangrove Ecotourism</title>
+    <link rel="icon" href="asset/logo.png">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="asset/logo.png" alt="Logo" class="logo">
+            <span>Ekowisata Mangrove <br> Pandang Tak Jemu</span>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="wisata.html">Wisata</a></li>
+            <li><a href="fasilitas.html">Fasilitas</a></li>
+            <li><a href="umkm.html">UMKM</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Cari..." class="search-input">
+            <button class="search-button">
+                <img src="asset/Search.png" alt="Search Icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="asset/kontak/kontak.png" alt="Hero Image" class="hero-image">
+        <div class="hero1-content">
+            <h3>Hubungi Kami</h3>
+            <p>Ekowisata Mangrove Desa Wisata Kampung Tua Bakau Serip</p>
+            <a href="#kontak"><button class="ctb-button"> Jelajahi Sekarang <span class="arrow-icon"><i class="fas fa-angle-right"></i></span></button></a>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <section class="team-section" id="kontak">
+        <h3>Tim Terbaik Kami</h3>
+        
+        <div class="team-content">
+            <div class="team-member">
+                <img src="asset/kontak/1.png" alt="Gery D Smith">
+                <h4>Gery D Smith</h4>
+                <p>Ketua Pokdarwis Kampung Tua Bakau Serip<br> Mangrove Pandang Tak Jemu</p>
+                <a href="https://linkedin.com" target="_blank"><img src="asset/kontak/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="team-member">
+                <img src="asset/kontak/2.png" alt="Izzuddin Haidar Al Qossam">
+                <h4>Izzuddin Haidar Al Qossam</h4>
+                <p>Project Manager & Scrum Master<br> Institut Pertanian Bogor</p>
+                <a href="https://www.linkedin.com/in/izzuddin-haidar-al-qossam-544a531b9/" target="_blank"><img src="asset/kontak/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="team-member">
+                <img src="asset/kontak/3.png" alt="Dea Aisyah Wulandari">
+                <h4>Dea Aisyah Wulandari</h4>
+                <p>Hispter<br> Universitas Maritim Raja Ali Haji</p>
+                <a href="https://www.linkedin.com/in/dea-aisyah-wulandari-162012309" target="_blank"><img src="asset/kontak/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="team-member">
+                <img src="asset/kontak/4.png" alt="Syahrul Habib">
+                <h4>Syahrul Habib</h4>
+                <p>Hacker<br> Universitas Sumatera Utara</p>
+                <a href="https://www.linkedin.com/in/syahrul-habib-5b6949295/" target="_blank"><img src="asset/kontak/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    
+        <!-- Formulir Kontak -->
+        <div class="form-container">   
+            <form>
+                <h3>Hubungi Kami</h3>
+                <p>Ada yang bisa kami bantu?</p>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nama</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Lengkap">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">No. Telepon</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="No. Telepon">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput3">Alamat</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Alamat">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput4">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="name@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Pesan</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Halo, saya ingin bertanya...."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.981749336121!2d104.06841577411824!3d1.1733296988154567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d989f50e7ce455%3A0xad4299324777d760!2sPANDANG%20TAK%20JEMU%20(%20Ekowisata%20Mangrove)!5e0!3m2!1sid!2sid!4v1731053677133!5m2!1sid!2sid" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top-decoration">
+        <img src="asset/footer/footer.png" alt="Dekorasi atas footer">
+        <img src="asset/footer/footer.png" alt="Dekorasi atas footer">
+        <img src="asset/footer/footer.png" alt="Dekorasi atas footer">
+        <img src="asset/footer/footer.png" alt="Dekorasi atas footer">
+        <img src="asset/footer/footer.png" alt="Dekorasi atas footer">
+    </div>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Ekowisata Mangrove</h2>
+        </div>
+        <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <p>Ekowisata Alam Mangrove Pandang Tak Jemu<br>
+                Desa Wisata Kampung Tua Bakau Serip<br>
+                Jl. Hang Lekiu KM.4 Kelurahan Sambau, Kecamatan Nongsa<br>
+                Kota Batam, Kepulauan Riau, Indonesia 29465</p>
+            <p>
+                <a href="http://wa.me/6281270031789"><img src="asset/footer/WhatsApp.png" alt="telepon">+62 812-7003-1789<br></a>
+                <a href="https://www.instagram.com/mangrovepandangtakjemu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="asset/footer/Instagram.png" alt="email">@mangrovepandangtakjemu<br></a>
+                <a href="https://www.facebook.com/share/1XrFzHPSF9/"><img src="asset/footer/facebook.png" alt="facebokk">Ekowisata Mangrove Pandang Tak Jemu<br></a>
+                <a href="https://youtube.com/@mangrovepandangtakjemu151?si=eSrO3rpu5it3s7Nd"><img src="asset/footer/YouTube.png" alt="youtube">Mangrove Pandang Tak Jemu</a>
+            </p>
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.981749336121!2d104.06841577411824!3d1.1733296988154567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d989f50e7ce455%3A0xad4299324777d760!2sPANDANG%20TAK%20JEMU%20(%20Ekowisata%20Mangrove)!5e0!3m2!1sid!2sid!4v1730996162460!5m2!1sid!2sid" width= "400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Ekowisata Mangrove ©2024 - made with ♥</p>
+    </div>
+</footer>
+<!-- End Footer Section -->
+
+    
+    <script src="java/script.js"></script>
+</body>
+</html>

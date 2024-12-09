@@ -1,0 +1,1341 @@
+* {
+    margin: 0;
+
+}
+/* Navbar Styling */
+.navbar {
+    position: flex;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 22px;
+    background-color: rgba(0, 98, 65, 1);
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar.navbar-scrolled {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: translateY(0); 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in; 
+}
+
+body.scrolled {
+    padding-top: 80px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: "Poltawski Nowy", serif;
+}
+
+.navbar-brand .logo {
+    width: 40px;
+    height: 36px;
+    margin-right: 20px;
+    margin-left: 18px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+    margin-right: -20rem; 
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    transition: background 0.3s;
+    font-weight: 300;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.navbar-menu li a:hover {
+    background-color: rgb(74, 204, 161);
+    border-radius: 5px;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-input {
+    display: none;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: white; 
+    color: grey; 
+}
+
+.search-button {
+    background-color: rgba(0, 98, 65, 1); 
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), 
+                -3px -3px 10px rgba(255, 255, 255, 0.1);
+    padding-right: 2rem;
+}
+
+.search-button img {
+    width: 26px;
+    height: 26px;
+}
+
+
+/* Hero Section  */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.hero-content {
+    position: absolute; 
+    z-index: 2; 
+    color: white; 
+    text-align: left; 
+    top: 50%; 
+    left: 50px; 
+    transform: translateY(-50%); 
+}
+
+.hero-content h3 {
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    margin-left: 30px;
+    font-weight: 80%;
+    font-family: "Poppins", serif;
+}
+
+.hero-content p {
+    font-size: 15px; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 1.5rem;
+    margin-left: 35px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+
+.hero-content p i {
+    color: white; 
+    font-size: 2rem; 
+}
+
+
+.cta-button {
+    background-color: rgba(0, 98, 65, 1); 
+    color: white; 
+    border: none;
+    padding: 5px 26px;
+    border-radius: 10px; 
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    position: relative;
+    margin-left: 40px;
+    font-family: "Poppins", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: rgb(1, 189, 126);
+}
+
+.arrow-icon {
+    background-color: white; 
+    color: rgba(0, 98, 65, 1);
+    border-radius: 50%; 
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-icon i {
+    font-size: 1rem; 
+}
+/* End Hero Section  */
+
+/* Mangrove Info Section */
+.mangrove-info {
+    padding: 40px;
+    background-color: #f8f8f8;
+    margin-top: 0;
+}
+
+.mangrove-info h2 {
+    color: #006241;
+    font-size: 2.2rem;
+    font-family: "Plus Jakarta Sans", serif;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.mangrove-info p {
+    color: #333;
+    font-size: 14px;
+    margin: 10px 0 10px;
+    font-family: "Plus Jakarta Sans", serif;
+    text-align: center;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 900px; 
+    margin: 40px auto ;
+    position: relative;
+    padding-bottom: 28.125%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+.mangrove-info p:last-of-type {
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #333;
+    margin-top: 20px;
+    text-align: justify;
+    font-family: "Rethink Sans", serif;
+    max-width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 57px; 
+}
+/* Mangrove Info Section */
+
+/* Slider Section */
+.slider-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.slider-section h2 {
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 97vw; /* Mengatur lebar hampir penuh layar */
+    margin: auto;
+    background-color: rgba(67, 147, 108, 1);
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+
+.slide {
+    display: none;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.slide h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Rethink Sans", serif;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 90px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.text-content h3 {
+    font-size: 30px;
+    color: white;
+    font-family: "Rethink Sans", serif;
+}
+
+.text-content p {
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+    font-family: "Rethink Sans", serif;
+}
+
+.slide-content img {
+    height: 196px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: rgba(0, 98, 65, 1);
+    font-weight: bold;
+    background-color: white;
+    width: 40px;       
+    height: 40px;      
+    border: none;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.prev {
+    left: 24px; 
+}
+
+.next {
+    right: 24px; 
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 98, 65, 1);
+    color: white;
+}
+
+
+.dot-container {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(109, 109, 109, 1);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+/* End Of Slide Section*/
+
+/* Keunikan Section*/
+.uniqueness-section {
+    background-color: #f9f9f9; 
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.uniqueness-section h2 {
+    font-size: 2rem;
+    margin-bottom: 31px;
+    margin-top: 4.7rem;
+    font-family: "Plus Jakarta Sans", serif;
+    color: black;
+}
+
+.uniqueness-list {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    margin-top: 2rem;
+}
+
+.uniqueness-list li {
+    background-color: #ffffff; 
+    border-radius: 18px; 
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    width: 300px; 
+    text-align: left; 
+    transition: box-shadow 0.3s; 
+    margin-bottom: 15px;
+}
+
+.uniqueness-list li:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.uniqueness-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.uniqueness-list h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    font-family: "Plus Jakarta Sans", serif;
+    margin-top: 0.2rem;
+}
+
+.uniqueness-list p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 1rem;
+    font-family: "Rethink Sans", serif;
+}
+/* End Keunikan Section */
+
+/* Wisata Section */
+.wisata-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.wisata-section h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.wisata-section p {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    font-family: "Plus Jakarta Sans";
+}
+
+.wisata-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wisata-item {
+    overflow: hidden;
+    width: 30%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s;
+}
+
+/* .wisata-item:hover {
+    transform: scale(1.05);
+} */
+
+.wisata-image {
+    width: 95%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.wisata-info {
+    padding: 15px;
+    text-align: left;
+}
+
+
+.small-title {
+    background-color: rgba(217, 217, 217, 1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    color: rgba(109, 109, 109, 1);
+}
+
+.wisata-info h3 {
+    font-size: 16px;
+    margin-left: 2px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.wisata-info p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 2px;
+    font-family: "Rethink Sans", serif;
+}
+
+.wisata-main-button-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.wisata-main-button {
+    padding: 8px 24px;
+    background-color: rgba(0, 117, 74, 1); 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.3s;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.wisata-main-button:hover {
+    background-color: rgb(74, 204, 161); 
+}
+
+.icon-arrow {
+    width: 37px; 
+    height: auto;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+/* End Wisata Section */
+
+/* UMKM Section */
+.umkm-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.umkm-section h2 {
+    font-size: 2rem;
+    margin-bottom: 9px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.umkm-section p {
+    margin-bottom: 47px;
+    font-size: 1.1rem;
+    font-family: "Plus Jakarta Sans";
+}
+
+.umkm-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.umkm-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 60px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.umkm-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.umkm-item h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.umkm-item span {
+    background-color: rgba(217, 217, 217, 1);
+    padding: 2px 6px;
+    border-radius: 12px; 
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    color: rgba(109, 109, 109, 1);
+    display: inline-flex; 
+    align-items: center;
+    max-width: fit-content; 
+}
+
+.umkm-item p {
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans", serif;
+    margin: 10px 0;
+    margin-top: 2px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.order-button {
+    background-color: rgba(24, 121, 73, 1);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    height: 40px; 
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.order-button:hover {
+    background-color: rgb(74, 204, 161);
+}
+
+.order-button .icon-send {
+    height: 100%; 
+    max-height: 24px; 
+    vertical-align: middle; 
+    margin-top: 8px;
+}
+/* End UMKM Section */
+
+/* Fasilitas Section */
+.fasilitas-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #EAF4F4;
+}
+
+.fasilitas-section h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.fasilitas-section p {
+    margin-bottom: 3rem;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    color: #333;
+}
+
+.fasilitas-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.fasilitas-item {
+    width: 340px; 
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.fasilitas-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.fasilitas-item h3 {
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", serif;
+    margin-top: -42px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 10px;
+    width: 94.2%; 
+    border-radius: 0 0 5px 5px; 
+    text-align: center;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+/* End Fasilitas Section */
+
+/* Hero Forall Section */
+.hero1-content {
+    position: absolute; 
+    z-index: 2; 
+    color: white; 
+    text-align: left; 
+    top: 68%; 
+    left: 50px; 
+    transform: translateY(-50%); 
+}
+
+.hero1-content h3 {
+    font-size: 64px; 
+    margin-bottom: 5px; 
+    margin-left: 35px;
+    font-weight: 80%;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.hero1-content p {
+    font-size: 27px; 
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 35px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+}
+
+.ctb-button {
+    background-color: rgba(0, 117, 74, 1); 
+    color: white; 
+    border: none;
+    padding: 5px 26px;
+    border-radius: 30px; 
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    position: relative;
+    margin-left: 35px;
+    font-family: "Poppins", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.ctb-button:hover {
+    background-color: rgb(1, 189, 126);
+}
+
+.arrow-icon {
+    background-color: white; 
+    color: rgba(0, 98, 65, 1);
+    border-radius: 50%; 
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End Hero Forall Section */
+
+/* Footer Section*/
+
+.footer {
+    background-color: rgba(0, 98, 65, 1);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-top-decoration {
+    display: flex;
+    justify-content: repeat;
+    overflow: hidden;
+    margin-top: -1.2rem;
+}
+
+.footer-top-decoration img {
+    height: 75px; 
+    width: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 13px;
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 30px;
+    font-family: "Poltawsky Nowi";
+}
+
+.footer-contact {
+    margin-left: -1rem;
+}
+
+.footer-contact h3 {
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 650;
+    margin-top: -1.5rem;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #ccc; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    gap: 4px; 
+    margin: 5px 0; 
+    margin-top: 1rem;
+}
+
+.footer-contact a:hover {
+    color: grey; 
+}
+
+.footer-contact img {
+    width: 22px; 
+    height: 22px;
+    filter: brightness(0.8) saturate(0.1);
+}
+
+
+.footer-map iframe {
+    margin-top: 2rem;
+    width: 130%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    background-color: none;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -4.2rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+.footer-bottom .footer-logo-text {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-bottom .footer-copy {
+    text-align: right;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+/* Kontak Section */
+.team-section {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.team-section h3 {
+    display: flex;
+    font-size: 40px;
+    font-family: "Rethink Sans", serif;
+    text-align: left;
+    margin-bottom: 2rem;
+    white-space: nowrap; 
+    margin-left: 3.3rem;
+    margin-top: 1.5rem;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: -1.5rem;
+    column-gap: 3rem;
+    max-width: 500px; 
+    width: 500%;
+    margin-top: 7rem;
+    margin-left: -29rem;
+}
+
+.team-member {
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.team-member img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+}
+
+
+.team-member h4 {
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    font-family: "Plus Jakarta Sans";
+}
+
+.team-member p {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0.5rem;
+    font-family: "Plus Jakarta Sans";
+    line-height: 1.3;
+}
+
+.team-member a img {
+    width: 35px;
+    height: auto;
+    border-radius: 0%;
+}
+
+.form-container {
+    padding: 20px;
+    margin-top: 65px;
+    margin-right: 3%;
+    padding-right: 40px;
+    max-width: 500px;
+    width: 500%; 
+    background-color: rgba(30, 57, 50, 1); 
+    border-radius: 22px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.form-container h3 {
+    font-size: 26px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    margin-top: -5px;
+    margin-bottom: 13px;
+    margin-left: 0;
+    color: white;
+}
+
+.form-container p {
+     font-size: 18px;
+     font-family: "Poppins", serif;
+     color: rgba(212, 233, 226, 1);
+     margin-bottom: 10px;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-group label {
+    display: block;
+    font-weight: 450;
+    color: white; 
+    margin-bottom: 0.5rem;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+form .form-group input,
+form .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(212, 233, 226, 1);
+    color: rgba(129, 118, 118, 1);
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+form button {
+    display: flex;
+    padding: 0.4rem 1.2rem;
+    background-color: rgba(0, 98, 65, 1);
+    color: #ffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 18px;
+    margin-top: 2.5rem;
+}
+
+form button:hover {
+    background-color: rgb(74, 204, 161);
+}
+
+/* News Section */
+.news-section {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+.news-section h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-family: "Rethink Sans", serif;
+    font-weight: 700;
+    margin-top: 8px;
+    color: rgba(4, 59, 32, 1);
+}
+
+.news-section p {
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    line-height: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+  }
+  
+.news-slider {
+    position: relative;
+    width: 65%;
+    max-width: 700px;
+    overflow: hidden;
+}
+  
+.news-slide {
+    display: none;
+    position: relative;
+}
+  
+.news-slide img {
+    width: 100%;
+    height: auto;
+}
+  
+.slide-caption a {
+    position: absolute;
+    bottom: 40px; 
+    left: 10px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Poppins";
+    font-size: 18px;
+    border-radius: 4px;
+}
+  
+.dot-news-container {
+    position: absolute;
+    bottom: 20px; 
+    width: 100%;
+    text-align: center;
+}
+  
+.dot-news {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+  .dot-news.active {
+    background-color: #717171;
+}
+  
+.news-solo {
+    width: 100%; 
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.news-solo img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+  
+.news-details {
+    text-align: left; 
+    padding: 10px 0; 
+    color: black;
+    font-family: "Poppins";
+}
+  
+.news-details p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+  
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 7.8rem; 
+    font-size: 14px;
+    color: grey;
+}
+  
+.news-meta img{
+    width: 40%;
+    height: auto;
+}
+
+.news-grid {
+    display: flex;
+    gap: 25px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem; 
+}
+  
+.news-item {
+    width: 100%;
+    max-width: 250px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px; 
+    font-family: "Poppins";
+}
+
+.news-item a {
+    text-decoration: none;
+}
+  
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.news-logo {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: -2rem;
+}
+  
+.news-item h3 {
+    font-size: 14px;
+    color: black;
+    margin: 5px 0 5px;
+    margin-bottom: 0;
+}
+  
+.news-item h3 a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+  
+.news-item p {
+    font-size: 14px;
+    color: grey;
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+}
+/* End News Section */
+
+/* Galeri Section */
+.gallery-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.gallery-section h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-family: "Rethink Sans", serif;
+    font-weight: 700;
+    margin-top: 8px;
+    color: rgba(4, 59, 32, 1);
+}
+
+.gallery-section p {
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    line-height: 30px;
+}
+
+.gallery-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    overflow: hidden;
+    width: 330px;
+    text-align: left;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.card-content p {
+    padding: 1rem;
+    font-size: 18px;
+    color: black;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 550;
+    text-align: left;
+}
+
+.gallery-description {
+    margin-top: 1rem;
+    text-align: left;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: "Plus Jakarta Sans";
+}
+
+.gallery-description h3 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.gallery-description .date {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 6rem;
+    text-align: justify;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3rem;
+    margin-top: 2rem;
+    max-width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-video-container {
+    max-width: 1100px;
+    max-height: auto;
+    margin: 2rem auto;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.gallery-video-container iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
